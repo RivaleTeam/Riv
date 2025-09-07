@@ -1,4 +1,4 @@
-// ALON - Simplified and Clean
+// Riv - Simplified and Clean
 'use strict';
 
 // CONFIG
@@ -437,7 +437,7 @@ function equal(a, b) {
 
 // TESTING
 if (typeof require !== 'undefined' && require.main === module) {
-  console.log('🧪 Testing ALON...\n');
+  console.log('🧪 Testing Riv...\n');
   
   const test = {
     name: "Test User",
@@ -488,7 +488,7 @@ if (typeof require !== 'undefined' && require.main === module) {
 }
 
 // EXPORT
-const ALON = { 
+const Riv = { 
   serialize, 
   deserialize, 
   pretty, 
@@ -501,12 +501,12 @@ const ALON = {
 };
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ALON;
+  module.exports = Riv;
 } else if (typeof window !== 'undefined') {
-  window.ALON = ALON;
+  window.Riv = Riv;
 }
 
 // Export default for ES6 modules
 if (typeof exports !== 'undefined') {
-  exports.default = ALON;
+  exports.default = Riv;
 }
