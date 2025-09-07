@@ -2,7 +2,7 @@
 // Project: https://github.com/yourusername/alon-js
 // Definitions by: Your Name <https://github.com/yourusername>
 
-export interface ALONConfig {
+export interface RivConfig {
   indent: number;
   maxDepth: number;
   maxLength: number;
@@ -13,19 +13,19 @@ export interface ValidationSchema {
   [key: string]: string | ValidationSchema | ValidationSchema[];
 }
 
-export interface ALON {
+export interface Riv {
   /**
-   * Serializes a JavaScript value to ALON format string
+   * Serializes a JavaScript value to Riv format string
    * @param value - The value to serialize
    * @param name - Optional object name
    * @param indent - Starting indentation level
-   * @returns ALON format string
+   * @returns Riv format string
    */
   serialize(value: any, name?: string | null, indent?: number): string;
 
   /**
-   * Deserializes an ALON format string to JavaScript value
-   * @param str - ALON format string
+   * Deserializes an Riv format string to JavaScript value
+   * @param str - Riv format string
    * @returns Parsed JavaScript value
    */
   deserialize(str: string): any;
@@ -34,7 +34,7 @@ export interface ALON {
    * Serializes with pretty formatting (alias for serialize)
    * @param value - The value to serialize
    * @param name - Optional object name
-   * @returns Pretty formatted ALON string
+   * @returns Pretty formatted Riv string
    */
   pretty(value: any, name?: string | null): string;
 
@@ -42,7 +42,7 @@ export interface ALON {
    * Serializes to compact single-line format
    * @param value - The value to serialize
    * @param name - Optional object name
-   * @returns Minified ALON string
+   * @returns Minified Riv string
    */
   minify(value: any, name?: string | null): string;
 
@@ -80,8 +80,8 @@ export interface ALON {
   /**
    * Configuration object
    */
-  config: ALONConfig;
+  config: RivConfig;
 }
 
-declare const ALON: ALON;
-export default ALON;
+declare const Riv: Riv;
+export default Riv;
