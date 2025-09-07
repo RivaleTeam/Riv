@@ -1,0 +1,40 @@
+{
+  "name": "riv",
+  "version": "1.0.0",
+  "description": "RIV (Readable Interoperable Values) – A human-readable data serialization format with advanced type support.",
+  "main": "riv.js",
+  "types": "riv.d.ts",
+  "private": true,
+  "keywords": [
+    "serialization",
+    "json",
+    "data-format",
+    "object-notation",
+    "parser",
+    "stringify",
+    "riv"
+  ],
+  "author": "Rivale team <team@rivale.su>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RivaleTeam/riv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RivaleTeam/riv/issues"
+  },
+  "homepage": "https://github.com/RivaleTeam/riv#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "riv.js",
+    "riv.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node riv.js",
+    "prepublishOnly": "npm test"
+  }
+}
